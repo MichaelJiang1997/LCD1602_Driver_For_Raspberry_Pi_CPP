@@ -118,6 +118,6 @@ void LCD1602::Delay(uint32_t s)
 //	clock_t start = clock();
 //	clock_t lay = (clock_t)s * CLOCKS_PER_SEC;
 //	while ((clock()-start) < lay);
-	while(s)s --;						//现在换成 for 循环
+	while(s)s --;						//现在换成 while 循环
 }
 

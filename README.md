@@ -23,7 +23,7 @@ D   -> GPIO24</br>
 D   -> GPIO25</br>
 A   -> VCC</br>
 K   -> GND</br>
-3.切换到项目目录然后<code>g++ lcd1602.cpp example_tiny_clock.cpp -lwiringPi  && ./a.out</code>
+3.切换到项目目录然后<code>g++ lcd1602.cpp example_tiny_clock.cpp -lwiringPi  && ./a.out</code></br>
 4.完成</br>
 
 2019年1月26日19:23:20</br>

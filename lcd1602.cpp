@@ -1,5 +1,6 @@
 /*
 // This file is part of LCD1602 Driver project
+// Last-Modified:2019-1-26 16:54:33 @ V0.0.1
 // Copyright (C)2019 SENCOM <sencom1997@outlook.com>
 //
 // This program is free software; you can redistribute it and/or
@@ -59,13 +60,13 @@ void LCD1602::Write_Com(uint8_t com)
 //	printf("%2X  ",com);
 	for(uint8_t i=0; i<8; i++)
 		digitalWrite(_data_pins[i],(com >> i) & 0x01);
-//	for(uint8_t i=0; i<8; i++)					刚开始时候老是初始化失败(没反应)
-//	{											以为是这里宏定义 HIGH LOW 的问题
+//	for(uint8_t i=0; i<8; i++)				刚开始时候老是初始化失败(没反应)
+//	{							以为是这里宏定义 HIGH LOW 的问题
 //		if ( (com >> i) & 0x01 == 1)			后来去看wiringPi.h 发现
-//		{										HIGH 定义为 1
-//			digitalWrite(_data_pins[i],HIGH);	LOW	 定义为 0  完全没毛病
-//			printf("1 ");						过了好几天后重新拾起,检查发现是线接错了... ...
-//		}										所以就留下了这一段Debug代码
+//		{						HIGH 定义为 1
+//			digitalWrite(_data_pins[i],HIGH);	LOW  定义为 0  完全没毛病
+//			printf("1 ");				过了好几天后重新拾起,检查发现是线接错了... ...
+//		}						所以就留下了这一段Debug代码
 //		else
 //		{
 //			digitalWrite(_data_pins[i],LOW);

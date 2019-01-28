@@ -27,7 +27,6 @@ int main()
 	char buf[128] = "People's Republic of China";
 	
 	wiringPiSetup();
-	
 	LCD1602 lcd;
 	lcd.Init(1, 4, 5, 0, 2, 3, 21, 22, 23, 24, 25);
 	lcd.Write_String(1, 1, buf);

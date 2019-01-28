@@ -30,7 +30,6 @@ int main()
 	int i,j;
 	
 	wiringPiSetup();
-	
 	LCD1602 lcd;
 	lcd.Init(1,4,5,0,2,3,21,22,23,24,25);
 	while(1)

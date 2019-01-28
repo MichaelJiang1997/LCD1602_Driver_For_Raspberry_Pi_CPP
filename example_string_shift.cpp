@@ -18,8 +18,10 @@
 // Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.	
 */
 
-#include "lcd1602.h"					//引用 lcd1602
+#include "lcd1602.h"				
+#include "wiringPi.h"
 #include "string.h"
+
 int main()
 {
     char buf[128] = "People's Republic of China";

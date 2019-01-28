@@ -29,6 +29,6 @@ int main()
 	lcd.Init(1, 4, 5, 0, 2, 3, 21, 22, 23, 24, 25);
 	lcd.Write_String(1, 1, buf);
 	while(1)
-		lcd.Shift(0, 1, strlen(buf));	//左移，整体一秒移一下，移动总长度为字符串 buf 长度
+		lcd.Shift(1, 1, strlen(buf));	//左移，整体一秒移一下，移动总长度为字符串 buf 长度
 	return 0;
 }

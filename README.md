@@ -13,14 +13,14 @@ VO  -> 偏压信号</br>
 RS  -> GPIO1</br>
 RW  -> GPIO4</br>
 E   -> GPIO5</br>
-D   -> GPIO0</br>
-D   -> GPIO2</br>
-D   -> GPIO3</br>
-D   -> GPIO21</br>
-D   -> GPIO22</br>
-D   -> GPIO23</br>
-D   -> GPIO24</br>
-D   -> GPIO25</br>
+D0   -> GPIO0</br>
+D1   -> GPIO2</br>
+D2   -> GPIO3</br>
+D3   -> GPIO21</br>
+D4   -> GPIO22</br>
+D5   -> GPIO23</br>
+D6   -> GPIO24</br>
+D7   -> GPIO25</br>
 A   -> VCC</br>
 K   -> GND</br>
 3.切换到项目目录然后<code>g++ lcd1602.cpp example_tiny_clock.cpp -lwiringPi  && ./a.out</code></br>

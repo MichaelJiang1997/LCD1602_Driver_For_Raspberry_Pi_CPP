@@ -1,6 +1,6 @@
 /*
 // This file is part of LCD1602 Driver project
-// Last-Modified:2019-1-26 16:54:33 @ V0.0.1
+// Last-Modified:2019-1-28 13:23:21 @ V0.0.2
 // Copyright (C)2019 SENCOM <sencom1997@outlook.com>
 //
 // This program is free software; you can redistribute it and/or

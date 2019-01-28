@@ -18,15 +18,18 @@
 // Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.	
 */
 
-#include "lcd1602.h"					//引用 lcd1602
+#include "lcd1602.h"				
+#include "wiringPi.h"
 
 int main()
 {
 	time_t t;
-    char buf[128];
-    char stime[64];						//存放时间截取
+   	char buf[128];
+    	char stime[64];						//存放时间截取
 	char sdate[64];						//存放日期截取
 	int i,j;
+	
+	wiringPiSetup();
 	
 	LCD1602 lcd;
 	lcd.Init(1,4,5,0,2,3,21,22,23,24,25);

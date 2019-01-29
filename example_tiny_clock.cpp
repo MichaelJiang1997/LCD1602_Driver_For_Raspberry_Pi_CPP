@@ -1,6 +1,6 @@
 /*
 // This file is part of LCD1602 Driver project
-// Last-Modified:2019-1-28 13:23:21 @ V0.0.2
+// Last-Modified:2019-1-29 12:07:23 @ V0.0.3
 // Copyright (C)2019 SENCOM <sencom1997@outlook.com>
 //
 // This program is free software; you can redistribute it and/or
@@ -28,10 +28,10 @@ int main()
     	char stime[64];						//存放时间截取
 	char sdate[64];						//存放日期截取
 	int i,j;
-	
+
 	wiringPiSetup();
 	LCD1602 lcd;
-	lcd.Init(1,4,5,0,2,3,21,22,23,24,25);
+	lcd.Init(1, 4, 5, 0, 2, 3, 21, 22, 23, 24, 25);
 	while(1)
 	{
 		time(&t);

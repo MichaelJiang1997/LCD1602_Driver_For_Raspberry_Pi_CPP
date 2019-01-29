@@ -1,6 +1,6 @@
 # LCD1602_Driver_For_Raspberry_Pi
 LCD1602 Driver For Raspberry Pi 3
-<b>v0.0.2</b>
+<b>v0.0.3</b>
 
 树莓派3b的Lcd1602驱动，基于wiringPi编写。<br/>
 
@@ -27,9 +27,11 @@ K   -> GND</br>
 4.完成</br>
 <br/>
 更新日志<br/>
+<b>v0.0.3</b>:更换延时方法；增加用户自定义字符功能。<br/>
+<br/>
 <b>v0.0.2</b>:修复首次执行LCD1602::Write_String()函数时位置参数无效问题；加入屏幕滚动功能。<br/>
 <br/>
 <b>v0.0.1</b>:目前仅实现基础功能。<br/>
 <br/>
 <br/>
-2019年1月28日17:51:32</br>
+2019年1月29日12:18:10</br>

@@ -41,9 +41,9 @@ void LCD1602::Init( int rs, int rw, int en, int d0, int d1, int d2, int d3, int 
 	pinMode(_rs_pin,OUTPUT);
 	
 	Write_Com(SETMODE);     //模式设置
-    Write_Com(DISOPEN);     //显示设置
-    Write_Com(DISMODE);     //显示模式
-    Write_Com(CLEAR);       //清屏
+    	Write_Com(DISOPEN);     //显示设置
+    	Write_Com(DISMODE);     //显示模式
+    	Write_Com(CLEAR);       //清屏
 	
 }
 

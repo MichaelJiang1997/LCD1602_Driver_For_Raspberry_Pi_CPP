@@ -1,6 +1,6 @@
 /*
 // This file is part of LCD1602 Driver project
-// Last-Modified:2019-1-28 13:23:21 @ V0.0.2
+// Last-Modified:2019-1-29 12:07:23 @ V0.0.3
 // Copyright (C)2019 SENCOM <sencom1997@outlook.com>
 //
 // This program is free software; you can redistribute it and/or
@@ -24,13 +24,12 @@
 
 int main()
 {
-	char buf[128] = "People's Republic of China";
-	
+    char buf[128] = "People's Republic of China";
 	wiringPiSetup();
 	LCD1602 lcd;
 	lcd.Init(1, 4, 5, 0, 2, 3, 21, 22, 23, 24, 25);
 	lcd.Write_String(1, 1, buf);
 	while(1)
-		lcd.Shift(1, 1, strlen(buf));	//左移，整体一秒移一下，移动总长度为字符串 buf 长度
+		lcd.Shift(1, 1000, strlen(buf));	//左移，整体一秒(1000ms)移一下，移动总长度为字符串 buf 长度
 	return 0;
 }

@@ -24,27 +24,27 @@ void LCD1602::Init( int rs, int rw, int en, int d0, int d1, int d2, int d3, int 
 	_rs_pin = rs;
 	_rw_pin = rw;
 	_en_pin = en;
-  
+
 	_data_pins[0] = d0;
 	_data_pins[1] = d1;
 	_data_pins[2] = d2;
-	_data_pins[3] = d3; 
+	_data_pins[3] = d3;
 	_data_pins[4] = d4;
 	_data_pins[5] = d5;
 	_data_pins[6] = d6;
-	_data_pins[7] = d7; 
+	_data_pins[7] = d7;
 	for(int i=0; i<8; i++)
 		pinMode(_data_pins[i],OUTPUT);
-	
+
 	pinMode(_en_pin,OUTPUT);
 	pinMode(_rw_pin,OUTPUT);
 	pinMode(_rs_pin,OUTPUT);
-	
+
 	Write_Com(SETMODE);     //模式设置
-    	Write_Com(DISOPEN);     //显示设置
-    	Write_Com(DISMODE);     //显示模式
-    	Write_Com(CLEAR);       //清屏
-	
+	Write_Com(DISOPEN);     //显示设置
+	Write_Com(DISMODE);     //显示模式
+	Write_Com(CLEAR);       //清屏
+
 }
 
 void LCD1602::Write_Com(uint8_t com)
@@ -112,10 +112,10 @@ void LCD1602::Shift(uint8_t dire, uint32_t ms, uint8_t len)
 		}
 	}
 }
-void LCD1602::Set_User_Char(uint8_t c_addr, const uint8_t *c)
+void LCD1602::Set_User_Char(uint8_t index, const uint8_t *c)
 {
 	Write_Com(0x80);				//消除第一次不能指定位置写入问题
-	Write_Com(c_addr | 0x40);
+	Write_Com(index | 0x40);
 	for(int i = 0; i < 8; i++)
 	{
 		Write_Data(c[i]);

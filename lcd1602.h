@@ -28,7 +28,7 @@
 #define DISMODE 0x06	//读写字符后地址加1,屏显不移动
 #define SETADDR 0x80	//设置数据地址指针初始值
 #define CLEAR	0x01	//清屏,数据指针清零
-#define RET		0x02	//回车,数据指针清零
+#define RET	0x02	//回车,数据指针清零
 #define LSHIFT	0x18	//屏幕左移
 #define	RSHIFT	0x1C	//屏幕右移
 

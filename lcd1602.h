@@ -65,7 +65,7 @@ class LCD1602
 		void Set_User_Char(uint8_t index, const uint8_t *c);
 			//设置自定义字符 index 为自定义符号编号 从 0 --- 7 八个自定义字符编号，*c为字模数组地址
 		void Write_User_Char(uint8_t x,uint8_t y,uint8_t index);
-			//写字符串 x:行数 y:列数 (默认屏幕左上角为 第一行第一列) index为用户自定义字符串编号
+			//写字符串 x:列数 y:行数 (默认屏幕左上角为 第一行第一列) index为用户自定义字符串编号
 		void Clear(void);
 			//清屏
 }; 
